@@ -1,0 +1,99 @@
+body
+{
+background-color:#d0e4fe;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+     
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    margin: 0px auto;  
+}
+ 
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li a {
+    background: #404040;
+    color: #F6F6E8;
+    display: block;
+    float: left;
+    font: 400 16px/1.4 Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 20%;
+     
+    /*TRANSISTIONS*/
+    -webkit-transition: background 0.5s ease;
+       -moz-transition: background 0.5s ease;
+         -o-transition: background 0.5s ease;
+        -ms-transition: background 0.5s ease;
+            transition: background 0.5s ease;
+}
+ 
+/*HOVER*/
+nav li a:hover {
+    background: #2E4C7F;
+}
+nav li:last-child a {
+    border: none;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 1220px),
+only screen and (max-device-width : 1220px){
+    nav li a {
+        font: 400 16px/1.4 Arial, Helvetica, sans-serif;
+    }
+     
+}
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+    nav li a {
+        width: 20%;
+        border-bottom: 1px solid #fff;
+        font: 400 16px/1.4 Arial, Helvetica, sans-serif;
+    }
+     
+    nav li:last-child a, nav li:nth-child(5) a {
+        border-right: none;
+    }
+     
+    nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width : 700px),
+only screen and (max-device-width : 700px){
+    nav li a {
+        width: 50%;
+        font: 400 14px/1.4 Arial, Helvetica, sans-serif;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+     
+    nav li:nth-child(even) a {
+        border-right: none;
+    }
+     
+    nav li:nth-child(5) a, nav li:nth-child(6) a {
+        border-bottom: 1px solid #fff;
+    }
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+    nav li a {
+        font: 400 11px/1.4 Arial, Helvetica, sans-serif;
+    }
+}

@@ -1,0 +1,14 @@
+body
+{
+background-color:#d0e4fe;
+
+}
+
+* {
+    font-family: 'Arvo', serif;
+}
+
+.nav-collapse collapse {
+    float: right;
+}
+
